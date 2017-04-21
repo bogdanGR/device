@@ -1,0 +1,59 @@
+.sprite {
+    background-image: url("sprite.png");
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-credit {
+    width: 156px;
+    height: 188px;
+    background-position: -5px -5px;
+}
+
+.sprite-delivery {
+    width: 136px;
+    height: 164px;
+    background-position: -171px -5px;
+}
+
+.sprite-popular-1 {
+    width: 97px;
+    height: 55px;
+    background-position: -171px -179px;
+}
+
+.sprite-popular-2 {
+    width: 86px;
+    height: 117px;
+    background-position: -278px -179px;
+}
+
+.sprite-popular-3 {
+    width: 71px;
+    height: 87px;
+    background-position: -317px -5px;
+}
+
+.sprite-popular-4 {
+    width: 107px;
+    height: 65px;
+    background-position: -317px -102px;
+}
+
+.sprite-popular-5 {
+    width: 56px;
+    height: 98px;
+    background-position: -374px -177px;
+}
+
+.sprite-popular-6 {
+    width: 132px;
+    height: 69px;
+    background-position: -5px -306px;
+}
+
+.sprite-warranty {
+    width: 171px;
+    height: 195px;
+    background-position: -440px -5px;
+}

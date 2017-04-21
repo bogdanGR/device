@@ -1,0 +1,25 @@
+body {
+  min-width: 320px;
+
+  font-family: "Gilroy", "sans-serif", "Arial";
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+
+}
+input::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+input:-moz-placeholder {
+  opacity: 1;
+}
+
+input:-ms-input-placeholder {
+  opacity: 1;
+}
+input:-o-input-placeholder {
+  opacity: 1;
+}
