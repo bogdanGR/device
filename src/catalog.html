@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <header class="page-header">
+  <header class="page-header  container">
     <h1 class="logo  page-header__logo">
       <a class="logo__link" href="index.html">Device</a>
     </h1>
@@ -42,24 +42,24 @@
       <ul class="main-menu__list">
         <li class="main-menu__item">
           <a class="main-menu__link  main-menu__link--icon" href="catalog.html">Каталог</a>
-          <ul class="main-menu__catalog">
-            <li class="main-menu__catalog-item">
-              <a class="main-menu__catalog-link" href="#">Виртуальная реальность</a>
+          <ul class="main-menu__inner-list   main-menu__inner-list--hidden">
+            <li class="main-menu__inner-item">
+              <a class="main-menu__inner-link" href="#">Виртуальная реальность</a>
             </li>
-            <li class="main-menu__catalog-item">
-              <a class="main-menu__catalog-link" href="#">Моноподы для селфи</a>
+            <li class="main-menu__inner-item">
+              <a class="main-menu__inner-link" href="#">Моноподы для селфи</a>
             </li>
-            <li class="main-menu__catalog-item">
-              <a class="main-menu__catalog-link" href="#">Экшн-камеры</a>
+            <li class="main-menu__inner-item">
+              <a class="main-menu__inner-link" href="#">Экшн-камеры</a>
             </li>
-            <li class="main-menu__catalog-item">
-              <a class="main-menu__catalog-link" href="#">Фитнес-браслеты</a>
+            <li class="main-menu__inner-item">
+              <a class="main-menu__inner-link" href="#">Фитнес-браслеты</a>
             </li>
-            <li class="main-menu__catalog-item">
-              <a class="main-menu__catalog-link" href="#">Умные часы</a>
+            <li class="main-menu__inner-item">
+              <a class="main-menu__inner-link" href="#">Умные часы</a>
             </li>
-            <li class="main-menu__catalog-item">
-              <a class="main-menu__catalog-link" href="#">Квадрокоптеры</a>
+            <li class="main-menu__inner-item">
+              <a class="main-menu__inner-link" href="#">Квадрокоптеры</a>
             </li>
           </ul>
         </li>
@@ -76,9 +76,9 @@
     </nav>
   </header>
   <main class="page-main">
-    <h1 class="page-main__title">Моноподы для селфи</h1>
+    <h1 class="page-main__title  container">Моноподы для селфи</h1>
 
-    <ul class="breadcrumbs  page-main__breadcrumbs">
+    <ul class="breadcrumbs  page-main__breadcrumbs  container">
       <li class="breadcrumbs__item">
         <a class="breadcrumbs__link" href="index.html">Главная</a>
       </li>
@@ -89,32 +89,31 @@
         <a class="breadcrumbs__link" href="#">Моноподы для селфи</a>
       </li>
     </ul>
-    <form class="filter-form" action="/">
-      <div class="filter-form__title">Фильтр:</div>
-      <fieldset class="filter-form__fieldset">
-        <legend class="filter-form__legend">Стоимость</legend>
-        <div class="filter-form__range-controls">
-          <div class="filter-form__scale">
-            <div class="filter-form__bar" style="margin-left: 20%; width: 30%"></div>
+    <form class="form" action="/">
+      <div class="form__title">Фильтр:</div>
+      <fieldset class="field-price">
+        <legend class="field-price__legend">Стоимость</legend>
+        <div class="field-price__range-controls">
+          <div class="field-price__scale">
+            <div class="field-price__bar" style="margin-left: 20%; width: 30%"></div>
           </div>
-          <div class="filter-form__toggle  filter-form__toggle--min"></div>
-          <div class="filter-form__toggle  filter-form__toggle--max"></div>
+          <div class="field-price__toggle  field-price__toggle--min"></div>
+          <div class="field-price__toggle  field-price__toggle--max"></div>
         </div>
-        <div class="filter-form__price-controls">
-          <label class="filter-form__min-price">от <input name="min-price" type="text" value="0"></label>
-          <label class="filter-form__max-price">до <input name="max-price" type="text" value="15000"></label>
+        <div class="field-price__price-controls">
+          <label class="field-price__min-price">от <input name="min-price" type="text" value="0"></label>
+          <label class="field-price__max-price">до <input name="max-price" type="text" value="15000"></label>
         </div>
       </fieldset>
       <fieldset class="field-checkbox  filter-form__fieldset">
         <div class="filter-form__fieldset-wrap">
-          <legend class="filter-form__legend">Цвет</legend>
+          <legend class="form__legend">Цвет</legend>
           <div class="field-checkbox__group-wrap">
             <label class="field-checkbox__label">
             <input class="field-checkbox__input" type="checkbox" value="black" name="color">
             <span  class="field-checkbox__span">Черный</span>
           </label>
-
-            <label class="field-checkbox__label">
+          <label class="field-checkbox__label">
             <input class="field-checkbox__input" type="checkbox" value="white" name="color">
             <span class="field-checkbox__span">Белый</span>
           </label>
@@ -122,8 +121,7 @@
             <input class="field-checkbox__input" type="checkbox" value="blue" name="color">
             <span class="field-checkbox__span">Синий</span>
           </label>
-
-            <label class="field-checkbox__label">
+          <label class="field-checkbox__label">
             <input class="field-checkbox__input" type="checkbox" value="red" name="color">
             <span class="field-checkbox__span">Красный</span>
           </label>
@@ -135,7 +133,7 @@
         </div>
       </fieldset>
       <fieldset class="field-radio  filter-form__fieldset">
-        <legend class="field-radio__title  filter-form__legend">Bluetooth</legend>
+        <legend class="form__legend">Bluetooth</legend>
         <div class="field-radio__group-wrap">
           <label class="field-radio__label">
             <input class="field-radio__input" type="radio" value="yes" name="bluetooth">
@@ -147,6 +145,7 @@
           </label>
         </div>
       </fieldset>
+      <button class="btn  form__btn" type="submit">Показать</button>
     </form>
     <ul class="sort-list">
       <li class="sort-list__item">Сортировка:</li>
@@ -215,7 +214,7 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
+    <div class="page-footer__wrapper  container">
       <h1 class="logo  page-footer__logo">Device</h1>
       <ul class="user-block">
         <li class="user-block__item">
