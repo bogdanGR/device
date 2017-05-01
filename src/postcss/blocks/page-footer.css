@@ -1,0 +1,20 @@
+.page-footer {
+  background-color: $bg-footer;
+}
+.page-footer__wrapp {
+  display: flex;
+
+  &--middle {
+    justify-content: space-between;
+  }
+  &--bottom {
+    justify-content: flex-end;
+  }
+}
+.page-footer__user-block {
+  display: flex;
+}
+
+.page-footer__social-icons {
+  margin: 0 auto;
+}

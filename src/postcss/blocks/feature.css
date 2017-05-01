@@ -1,0 +1,17 @@
+.feature__items {
+  display: flex;
+  justify-content: space-between;
+
+}
+.feature__icon {
+  display: block;
+
+  min-height: 160px;
+
+  background-color: $bg-yellow;
+}
+.feature__item {
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+}

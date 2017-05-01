@@ -1,0 +1,13 @@
+.page-header__wrapper {
+  background-color: $bg-yellow;
+  width: 1160px;
+}
+.page-header__user-navigation {
+  display: flex;
+  width: 1040px;
+}
+.page-header__user-block {
+  display: flex;
+  justify-content: flex-end;
+  width: 500px;
+}

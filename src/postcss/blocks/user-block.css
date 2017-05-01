@@ -1,0 +1,16 @@
+.user-block {
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  list-style: none;
+}
+.user-block__item {
+
+  &--hidden {
+    display: none;
+  }
+
+  &--entrance {
+    margin-right: 200px;
+  }
+}

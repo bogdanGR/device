@@ -1,6 +1,11 @@
 .form {
-
+  &--filter {
+    background-color: #efefef;
+  }
   &--feedback {
     display: none;
   }
+}
+.form__title {
+  background-color: #dbdbdb;
 }

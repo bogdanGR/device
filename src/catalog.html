@@ -10,24 +10,28 @@
 
 <body>
   <header class="page-header  container">
-    <h1 class="logo  page-header__logo">
-      <a class="logo__link" href="index.html">Device</a>
-    </h1>
-    <nav class="user-navigation">
-      <form class="search" action="/">
-        <label class="search__label" for="search">
-          <input class="search__input" type="search" name="search" value="search" placeholder="Поиск по сайту" id="search">
+    <div class="page-header__wrapper">
+    <a class="logo  page-header__logo" href="index.html">
+      <h1 class="logo__title">Device</h1>
+    </a>
+    <nav class="user-navigation  page-header__user-navigation">
+      <form class="form" action="/">
+        <div class="field-search">
+          <label class="field-search__label" for="search">
+          <input class="field-search__input" type="search" name="search" placeholder="Поиск по сайту" id="search">
+          <span class="visually-hidden">Поиск по сайту</span>
         </label>
-        <button class="search__btn" type="submit">Найти</button>
+          <button class="field-search__btn" type="submit">Найти</button>
+        </div>
       </form>
-      <ul class="user-block">
-        <li class="user-block__item">
-          <a href="" class="user-block__link">Войти</a>
+      <ul class="user-block  page-header__user-block">
+        <li class="user-block__item  user-block__item--entrance  user-block__item--hidden">
+          <a class="user-block__link" href="#">Войти</a>
         </li>
-        <li class="user-block__item  user-block__item--hidden">
+        <li class="user-block__item">
           Валентин Петухов
         </li>
-        <li class="user-block__item  user-block__item--hidden">
+        <li class="user-block__item">
           <a href="" class="user-block__link">Выйти</a>
         </li>
         <li class="user-block__item">
@@ -40,7 +44,7 @@
     </nav>
     <nav class="main-menu">
       <ul class="main-menu__list">
-        <li class="main-menu__item">
+        <li class="main-menu__item main-menu__item--catalog">
           <a class="main-menu__link  main-menu__link--icon" href="catalog.html">Каталог</a>
           <ul class="main-menu__inner-list   main-menu__inner-list--hidden">
             <li class="main-menu__inner-item">
@@ -63,17 +67,20 @@
             </li>
           </ul>
         </li>
-        <li class="main-menu__item">
+        <li class="main__menu-wrapper">
+        <li class="main-menu__item  main-menu__item--delivery">
           <a class="main-menu__link" href="#">Доставка</a>
         </li>
-        <li class="main-menu__item">
+        <li class="main-menu__item  main-menu__item--guarantee">
           <a class="main-menu__link" href="#">Гарантия</a>
         </li>
         <li class="main-menu__item">
           <a class="main-menu__link" href="#">Контакты</a>
         </li>
+        </li>
       </ul>
     </nav>
+    </div>
   </header>
   <main class="page-main">
     <h1 class="page-main__title  container">Моноподы для селфи</h1>
@@ -89,8 +96,11 @@
         <a class="breadcrumbs__link" href="#">Моноподы для селфи</a>
       </li>
     </ul>
-    <form class="form" action="/">
-      <div class="form__title">Фильтр:</div>
+    <form class="form  form--filter" action="/" method="get">
+      <div class="form__title">
+        <div class="container">Фильтр:</div>
+      </div>
+      <div class="form__wrapper  container">
       <fieldset class="field-price">
         <legend class="field-price__legend">Стоимость</legend>
         <div class="field-price__range-controls">
@@ -146,8 +156,9 @@
         </div>
       </fieldset>
       <button class="btn  form__btn" type="submit">Показать</button>
+      </div>
     </form>
-    <ul class="sort-list">
+    <ul class="sort-list  container">
       <li class="sort-list__item">Сортировка:</li>
       <li class="sort-list__item">
         <a class="sort-list__link  sort-list__link--active" href="#">По цене</a>
@@ -165,7 +176,7 @@
         <a class="sort-list__link" href="#">Стрелка вниз</a>
       </li>
     </ul>
-    <section class="product">
+    <section class="product  container">
       <article class="product__item">
         <figure class="product__img-wrapp">
           <img class="product__img" src="img/item-1.jpg" alt="selfie stick" width="360" height="380">
@@ -203,7 +214,7 @@
         </figure>
       </article>
     </section>
-    <section class="pagination">
+    <section class="pagination  container">
       <ul class="pagination__list">
         <li class="pagination__item">Назад</li>
         <li class="pagination__item  pagination__item--active">1</li>
@@ -215,8 +226,11 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper  container">
-      <h1 class="logo  page-footer__logo">Device</h1>
-      <ul class="user-block">
+      <div class="page-footer__wrapp  page-footer__wrapp--top">
+        <a class="logo  page-footer__logo" href="index.html">
+          <h1 class="logo__title">Device</h1>
+        </a>
+      <ul class="user-block  page-footer__user-block">
         <li class="user-block__item">
           <a href="" class="user-block__link">Войти</a>
         </li>
@@ -234,7 +248,8 @@
         </li>
       </ul>
       </nav>
-      <div class="page-footer__nav-wrapp">
+      </div>
+      <div class="page-footer__wrapp  page-footer__wrapp--middle">
         <p class="page-footer__address">г. Москва, ул. Строителей, 15</p>
         <nav class="main-menu">
           <ul class="main-menu__list">
@@ -251,14 +266,16 @@
         </nav>
         <a class="page-footer__tel" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
       </div>
-      <div class="social-icons">
+      <div class="page-footer__wrapp  page-footer__wrapp--bottom">
+      <div class="social-icons  page-footer__social-icons">
         <a class="social-link  social-link--fb" href="#">Facebook</a>
         <a class="social-link  social-link--insta" href="#">Instagram</a>
         <a class="social-link  social-link--tw" href="#">Twitter</a>
       </div>
-      <div class="copyright">
+      <div class="copyright  page-footer__copyright">
         <img src="img/icons/htmlacademy.svg" alt="" width="50" height="50">
       </div>
+    </div>
     </div>
   </footer>
 </body>

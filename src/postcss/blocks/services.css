@@ -1,0 +1,22 @@
+.services {
+  background-color: yellowgreen;
+}
+.services__wrapper {
+  display: flex;
+}
+
+.services__list {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+}
+.services__block {
+  display: flex;
+  flex-direction: column;
+  width: 780px;
+
+  &--second,
+  &--third {
+    display: none;
+  }
+}

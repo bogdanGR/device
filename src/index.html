@@ -10,20 +10,21 @@
 
 <body>
   <header class="page-header  container">
+    <div class="page-header__wrapper">
     <h1 class="logo  page-header__logo">Device</h1>
-    <nav class="user-navigation">
+    <nav class="user-navigation  page-header__user-navigation">
       <form class="form" action="/">
         <div class="field-search">
           <label class="field-search__label" for="search">
-          <input class="field-search__input" type="search" name="search" value="search" placeholder="Поиск по сайту" id="search">
+          <input class="field-search__input" type="search" name="search" placeholder="Поиск по сайту" id="search">
           <span class="visually-hidden">Поиск по сайту</span>
         </label>
           <button class="field-search__btn" type="submit">Найти</button>
         </div>
       </form>
-      <ul class="user-block">
-        <li class="user-block__item">
-          <a  class="user-block__link" href="#">Войти</a>
+      <ul class="user-block  page-header__user-block">
+        <li class="user-block__item user-block__item--entrance">
+          <a class="user-block__link" href="#">Войти</a>
         </li>
         <li class="user-block__item  user-block__item--hidden">
           Валентин Петухов
@@ -41,7 +42,7 @@
     </nav>
     <nav class="main-menu">
       <ul class="main-menu__list">
-        <li class="main-menu__item">
+        <li class="main-menu__item main-menu__item--catalog">
           <a class="main-menu__link  main-menu__link--icon" href="catalog.html">Каталог</a>
           <ul class="main-menu__inner-list   main-menu__inner-list--hidden">
             <li class="main-menu__inner-item">
@@ -64,22 +65,26 @@
             </li>
           </ul>
         </li>
-        <li class="main-menu__item">
+        <li class="main__menu-wrapper">
+        <li class="main-menu__item  main-menu__item--delivery">
           <a class="main-menu__link" href="#">Доставка</a>
         </li>
-        <li class="main-menu__item">
+        <li class="main-menu__item  main-menu__item--guarantee">
           <a class="main-menu__link" href="#">Гарантия</a>
         </li>
         <li class="main-menu__item">
           <a class="main-menu__link" href="#">Контакты</a>
         </li>
+        </li>
       </ul>
     </nav>
+    </div>
   </header>
   <main class="page-main">
     <section class="sliders  container">
       <div class="slider">
-        <img src="img/slider-1.png" alt="selfie stick" width="" height="">
+        <img class="slider__img" src="img/slider-1.png" alt="selfie stick" width="384" height="486">
+        <div class="slider__wrapper">
         <h2 class="slider__title">Делай селфи, как Бен Стиллер! </h2>
         <p class="slider__text">
           Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
@@ -98,7 +103,8 @@
           </tr>
         </table>
       </div>
-      <div class="slider">
+      </div>
+      <div class="slider  slider--hidden">
         <img src="img/slider-2.png" alt="clock" width="" height="">
         <h2 class="slider__title">Худеем правильно!</h2>
         <p class="slider__text">
@@ -114,7 +120,7 @@
           </tr>
         </table>
       </div>
-      <div class="slider">
+      <div class="slider  slider--hidden">
         <img src="img/slider-3.png" alt="plane" width="" height="">
         <h2 class="slider__title">Порхает как бабочка, жалит как пчела! </h2>
         <p class="slider__text">
@@ -134,24 +140,33 @@
       </div>
     </section>
     <section class="feature  container">
-      <div class="feature__item feature__item--icon  feature__item--VR">
-        <h3 class="feature__title">Виртуальная реальность</h3>
-      </div>
-      <div class="feature__item  feature__item--icon  feature__item--stick">
-        <h3 class="feature__title">Моноподы для селфи</h3>
-      </div>
-      <div class="feature__item  feature__item--icon  feature__item--cameras">
-        <h3 class="feature__title">Экшн-камеры</h3>
-      </div>
-      <div class="feature__item  feature__item--icon  feature__item--bracelet">
-        <h3 class="feature__title">Фитнес-браслеты</h3>
-      </div>
-      <div class="feature__item  feature__item--icon  feature__item--clocks">
-        <h3 class="feature__title">Умные часы</h3>
-      </div>
-      <div class="feature__item  feature__item--icon  feature__item--plane">
-        <h3 class="feature__title">Квадрокоптеры</h3>
-      </div>
+        <div class="feature__items">
+          <div class="feature__item">
+            <a class="feature__icon  feature__icon--icon  feature__icon--VR" href="#"></a>
+            <h3 class="feature__title">Виртуальная реальность</h3>
+          </div>
+
+          <div class="feature__item">
+            <a class="feature__icon  feature__item--stick"></a>
+            <h3 class="feature__title">Моноподы для селфи</h3>
+          </div>
+          <div class="feature__item">
+            <a class="feature__icon  feature__item--cameras"></a>
+            <h3 class="feature__title">Экшн-камеры</h3>
+          </div>
+          <div class="feature__item">
+            <a class="feature__icon  feature__item--bracelet"></a>
+            <h3 class="feature__title">Фитнес-браслеты</h3>
+          </div>
+          <div class="feature__item">
+            <a class="feature__icon  feature__item--clocks"></a>
+            <h3 class="feature__title">Умные часы</h3>
+          </div>
+          <div class="feature__item">
+            <a class="feature__icon  feature__item--plane"></a>
+            <h3 class="feature__title">Квадрокоптеры</h3>
+          </div>
+        </div>
     </section>
     <section class="services">
       <div class="services__wrapper  container">
@@ -195,7 +210,8 @@
       <a class="partner__item  partner__item--gopro" href="#">GoPro</a>
       <a class="partner__item  partner__item--vive" href="#">Vive</a>
     </section>
-    <section class="about  container">
+    <div class="page-main__wrapper  container">
+    <section class="about  page-main__about">
       <h3 class="about__title">О нас</h3>
       <p class="about__text">
         Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
@@ -209,22 +225,24 @@
         <li class="about__item">ЖелДорЭкспедиция</li>
       </ul>
       <a class="btn  about__link" href="#">Подробнее о нас</a>
-    </setction>
-    <section class="contacts  container">
-      <h3 class="contacts__title">Контакты</h3>
-      <p class="contacts__text">
-        Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
-      </p>
-      <div class="map  contacts__map">
-        <img src="img/map.jpg" alt="map" width="" height="">
-      </div>
-      <a class="btn  contacts__link" href="#">Напишите нам</a>
-    </setction>
+      </section>
+      <section class="contacts  page-main__contacts">
+        <h3 class="contacts__title">Контакты</h3>
+        <p class="contacts__text">
+          Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
+        </p>
+        <div class="map  contacts__map">
+          <img src="img/map.jpg" alt="map" width="" height="">
+        </div>
+        <a class="btn  contacts__link" href="#">Напишите нам</a>
+        </section>
+        </div>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper  container">
+      <div class="page-footer__wrapp  page-footer__wrapp--top">
       <h1 class="logo  page-footer__logo">Device</h1>
-      <ul class="user-block">
+      <ul class="user-block  page-footer__user-block">
         <li class="user-block__item">
           <a href="" class="user-block__link">Войти</a>
         </li>
@@ -242,7 +260,8 @@
         </li>
       </ul>
       </nav>
-      <div class="page-footer__nav-wrapp">
+      </div>
+      <div class="page-footer__wrapp  page-footer__wrapp--middle">
         <p class="page-footer__address">г. Москва, ул. Строителей, 15</p>
         <nav class="main-menu">
           <ul class="main-menu__list">
@@ -259,14 +278,16 @@
         </nav>
         <a class="page-footer__tel" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
       </div>
-      <div class="social-icons">
+      <div class="page-footer__wrapp  page-footer__wrapp--bottom">
+      <div class="social-icons  page-footer__social-icons">
         <a class="social-link  social-link--fb" href="#">Facebook</a>
         <a class="social-link  social-link--insta" href="#">Instagram</a>
         <a class="social-link  social-link--tw" href="#">Twitter</a>
       </div>
-      <div class="copyright">
+      <div class="copyright  page-footer__copyright">
         <img src="img/icons/htmlacademy.svg" alt="" width="50" height="50">
       </div>
+    </div>
     </div>
   </footer>
   <form class="form  form--feedback" action="/">

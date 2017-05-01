@@ -1,0 +1,32 @@
+.main-menu__list {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.main-menu__inner-list {
+  &--hidden {
+    display: none;
+  }
+}
+.main-menu__item {
+  &--delivery {
+    margin-right: 40px;
+  }
+  &--guarantee {
+    margin-right: 110px;
+  }
+}
+.main-menu__link {
+  font-size: 18px;
+  line-height: normal;
+  font-weight: 700;
+
+  text-decoration: none;
+  color: $txt-primary;
+  text-transform: uppercase;
+}
+.main__menu-wrapper {
+  margin-left: 600px;
+}
