@@ -32,7 +32,7 @@
         <li class="user-block__item  user-block__item--hidden">
           <a href="" class="user-block__link">Выйти</a>
         </li>
-        <li class="user-block__item">
+        <li class="user-block__item  user-block__item--padding">
           <a class="user-block__link" href="">Сравнить</a>
         </li>
         <li class="user-block__item">
@@ -40,7 +40,7 @@
         </li>
       </ul>
     </nav>
-    <nav class="main-menu">
+    <nav class="main-menu  page-header__main-menu">
       <ul class="main-menu__list">
         <li class="main-menu__item main-menu__item--catalog">
           <a class="main-menu__link  main-menu__link--icon" href="catalog.html">Каталог</a>
@@ -81,11 +81,11 @@
     </div>
   </header>
   <main class="page-main">
-    <section class="sliders  container">
-      <div class="slider">
+    <section class="sliders  page-main__sliders container">
+      <div class="slider  page-main__slider">
         <img class="slider__img" src="img/slider-1.png" alt="selfie stick" width="384" height="486">
         <div class="slider__wrapper">
-        <h2 class="slider__title">Делай селфи, как Бен Стиллер! </h2>
+        <h2 class="slider__title">Делай селфи,<br>как Бен Стиллер! </h2>
         <p class="slider__text">
           Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
         </p>
@@ -104,7 +104,7 @@
         </table>
       </div>
       </div>
-      <div class="slider  slider--hidden">
+      <div class="slider  page-main__slider  slider--hidden">
         <img src="img/slider-2.png" alt="clock" width="" height="">
         <h2 class="slider__title">Худеем правильно!</h2>
         <p class="slider__text">
@@ -120,7 +120,7 @@
           </tr>
         </table>
       </div>
-      <div class="slider  slider--hidden">
+      <div class="slider  page-main__slider  slider--hidden">
         <img src="img/slider-3.png" alt="plane" width="" height="">
         <h2 class="slider__title">Порхает как бабочка, жалит как пчела! </h2>
         <p class="slider__text">
@@ -142,29 +142,35 @@
     <section class="feature  container">
         <div class="feature__items">
           <div class="feature__item">
-            <a class="feature__icon  feature__icon--icon  feature__icon--VR" href="#"></a>
+            <a class="feature__icon  feature__icon--VR" href="#">
             <h3 class="feature__title">Виртуальная реальность</h3>
+            </a>
           </div>
 
           <div class="feature__item">
-            <a class="feature__icon  feature__item--stick"></a>
-            <h3 class="feature__title">Моноподы для селфи</h3>
+            <a class="feature__icon  feature__icon--stick" href="#">
+              <h3 class="feature__title">Моноподы для селфи</h3>
+            </a>
           </div>
           <div class="feature__item">
-            <a class="feature__icon  feature__item--cameras"></a>
-            <h3 class="feature__title">Экшн-камеры</h3>
+            <a class="feature__icon  feature__icon--cameras"  href="#">
+              <h3 class="feature__title">Экшн-камеры</h3>
+            </a>
           </div>
           <div class="feature__item">
-            <a class="feature__icon  feature__item--bracelet"></a>
-            <h3 class="feature__title">Фитнес-браслеты</h3>
+            <a class="feature__icon  feature__icon--bracelet"  href="#">
+              <h3 class="feature__title">Фитнес-браслеты</h3>
+            </a>
           </div>
           <div class="feature__item">
-            <a class="feature__icon  feature__item--clocks"></a>
-            <h3 class="feature__title">Умные часы</h3>
+            <a class="feature__icon  feature__icon--clocks"  href="#">
+              <h3 class="feature__title">Умные часы</h3>
+            </a>
           </div>
           <div class="feature__item">
-            <a class="feature__icon  feature__item--plane"></a>
-            <h3 class="feature__title">Квадрокоптеры</h3>
+            <a class="feature__icon  feature__icon--plane" href="#">
+              <h3 class="feature__title">Квадрокоптеры</h3>
+            </a>
           </div>
         </div>
     </section>

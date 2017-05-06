@@ -4,14 +4,83 @@
 
 }
 .feature__icon {
-  display: block;
+  position: relative;
 
-  min-height: 160px;
+  text-decoration: none;
+  color: $txt-primary;
 
-  background-color: $bg-yellow;
+  &::before {
+    display: block;
+    content: "";
+
+    width: 160px;
+    height: 160px;
+
+    background-color: $bg-yellow;
+  }
+
 }
 .feature__item {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   width: 160px;
+}
+.feature__icon {
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 25%;
+    left: 20%;
+
+    background: url("../img/sprite.png") no-repeat;
+  }
+  &--VR::after {
+    width: 97px;
+    height: 55px;
+    background-position: -171px -179px;
+  }
+  &--stick::after {
+    top: 18%;
+    left: 23%;
+
+    width: 86px;
+    height: 117px;
+    background-position: -278px -179px;
+  }
+  &--cameras::after {
+    top: 18%;
+    left: 30%;
+
+    width: 71px;
+    height: 87px;
+    background-position: -317px -5px;
+  }
+  &--bracelet::after {
+    left: 18%;
+
+    width: 107px;
+    height: 65px;
+    background-position: -317px -102px;
+  }
+  &--clocks::after {
+    top: 18%;
+    left: 32%;
+
+    width: 56px;
+    height: 98px;
+    background-position: -374px -177px;
+  }
+  &--plane::after {
+    left: 10%;
+
+    width: 132px;
+    height: 69px;
+    background-position: -5px -306px;
+  }
+
 }

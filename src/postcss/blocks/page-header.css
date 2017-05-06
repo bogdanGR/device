@@ -1,6 +1,7 @@
 .page-header__wrapper {
   background-color: $bg-yellow;
-  width: 1160px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 .page-header__user-navigation {
   display: flex;
@@ -10,4 +11,11 @@
   display: flex;
   justify-content: flex-end;
   width: 500px;
+}
+.page-header__logo {
+  position: relative;
+  top: -30px;
+}
+.page-header__main-menu {
+  padding-bottom: 170px;
 }

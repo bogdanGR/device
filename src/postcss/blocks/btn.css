@@ -1,0 +1,36 @@
+.btn {
+  position: relative;
+  z-index: 1;
+
+
+  font-size: 18px;
+  line-height: normal;
+  font-weight: 800;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $txt-primary;
+  outline: none;
+  border: none;
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 7px;
+
+
+    width: 260px;
+    height: 6px;
+
+    background: $bg-btn;
+
+    border-top: 1px solid $border-btn;
+    border-bottom: 1px solid $border-btn;
+  }
+  &:hover::before {
+    height: 38px;
+  }
+}

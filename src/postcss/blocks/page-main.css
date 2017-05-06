@@ -1,3 +1,6 @@
+.page-main {
+  @mixin clearfix;
+}
 .page-main__wrapper {
   display: flex;
 }
@@ -7,4 +10,15 @@
 }
 .page-main__contacts {
   width: 600px;
+}
+.page-main__catalog-wrapper {
+  float: right;
+  width: 760px;
+}
+.page-main__sliders {
+  position: relative;
+  top: -80px;
+}
+.page-main__slider {
+  margin-left: 90px;
 }

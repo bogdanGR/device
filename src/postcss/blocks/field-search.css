@@ -1,0 +1,8 @@
+.field-search__input {
+  font-size: 15px;
+  line-height: 36px;
+  font-weight: 300;
+
+  border: none;
+  background-color: $bg-yellow;
+}

@@ -9,8 +9,20 @@
   &--hidden {
     display: none;
   }
+  &--padding {
+    padding-right: 40px;
+  }
 
   &--entrance {
     margin-right: 200px;
   }
+}
+.user-block__link {
+  font-family: "Open Sans", Arial;
+  font-size: 15px;
+  line-height: 36px;
+  font-weight: 400;
+
+  color: $txt-primary;
+  text-decoration: none;
 }
